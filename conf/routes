@@ -1,0 +1,10 @@
+# APIs in FootballClubController
+GET     /api/defaultFootballClubs       controllers.FootballClubController.listDefaultFootballClubs()
+GET     /api/uniFootballClubs           controllers.FootballClubController.listUniFootballClubs()
+GET     /api/schoolFootballClubs        controllers.FootballClubController.listSchoolFootballClubs()
+GET     /api/footballMatches            controllers.FootballClubController.listFootballMatches()
+
+GET    /api/createMatch                controllers.FootballClubController.createMatch()
+
+# Serve static assets under public directory
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)
