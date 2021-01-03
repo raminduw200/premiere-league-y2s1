@@ -1,0 +1,32 @@
+<div class="search-box">
+    <button (click) = "sortByDate()" class="add-match-button">Sort by date</button>
+
+    <mat-form-field appearance="fill">
+        <input matInput [matDatepicker]="matchDate" [(ngModel)]="date" (dateChange) = "onDate($event.value)" placeholder="Select a date">
+        <mat-icon *ngIf="date" matDatepickerToggleIcon (click)="clearDate($event)">clear</mat-icon>
+        <mat-datepicker-toggle matSuffix [for]="matchDate"></mat-datepicker-toggle>
+        <mat-datepicker #matchDate></mat-datepicker>
+    </mat-form-field>
+
+    <button (click) = "createMatch()" class="add-match-button">Generate Match</button>      
+</div>
+
+<div class="match-card" *ngFor="let match of matches">
+    
+    <div class="row1">
+        <h3 class="team-name"> {{match.footballClub1.clubName}} </h3>
+        <h5 class="vs">VS</h5>
+        <h3 class="team-name">{{match.footballClub2.clubName}}</h3>
+    </div>
+
+    <hr>
+
+    <div class="row2">
+        <div class="points"><div class="point">{{match.footballClub1.points}}</div> Points</div>
+        <div class="goals"><div class="point">{{match.footballClub1.goalScoredCount}}</div>Goals</div>
+        <div class="date">{{match.date.day}}/{{match.date.month}}/{{match.date.year}} </div>
+        <div class="goals"><div class="point">{{match.footballClub2.goalScoredCount}}</div>Goals</div>
+        <div class="points"><div class="point">{{match.footballClub2.points}}</div>Points</div>
+    </div>
+    
+</div>

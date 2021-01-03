@@ -1,0 +1,76 @@
+.match-card {
+    margin: 20px 0;
+    padding: 30px 40px;
+    background-color: #2b2b2b;
+    background-image: url("src\app\images\Others\match-card.png");
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: medium;
+    border-radius: 20px;
+}
+
+.team-name, .point{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.point{
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to left, #37323E, #dfdfdf, #37323E);
+}
+
+.row1 , .row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1 > h3, .row1 > h5, .row2 > div {
+    margin: 10px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar {
+    height: 60px;
+}
+
+.add-match-button {
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 45px;
+    /* border: 2px solid #c7c7c7; */
+    border: 0;
+    background-color: white;
+    box-shadow: 5px 6px 10px rgb(226, 226, 226);
+    border-radius: 8px;
+}
+
+.add-match-button:hover {
+    font-size: 14px;
+    transform: scale(1.03);
+    background-color: #acacac;
+}
+
+.add-match-button:active {
+    transform: scale(0.97);
+    background-color: #858585;
+}
+
+.add-match-button {
+    font-weight: bold;
+    transition: 0.3s;
+    width: 20%;
+}

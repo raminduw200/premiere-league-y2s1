@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.16' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.header { 
+    grid-column: 1 / span 3;
+    margin-top: 74px;
+    padding-top: 17%;
+    padding-bottom: 17%;
+    text-align: center;
+    color: aliceblue;
+    width: auto;
+    background-image: url('src\app\images\Covers\schoolteams.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgb(54, 54, 54);
+}
+
+.header > h1{
+    font-weight: bolder;
+    font-size: 300%;
+    letter-spacing: 8px;
+}
