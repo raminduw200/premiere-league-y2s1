@@ -1,0 +1,66 @@
+.button{
+    -fx-background-color: #ffffff;
+    /*-fx-border-radius: 20;*/
+    /*-fx-background-radius: 20;*/
+    -fx-font-weight: bold;
+    -fx-text-fill: #4e4e4e;
+}
+.button:hover{
+    -fx-background-color: #c2c2c2;
+    -fx-font-size: 12px;
+}
+.button:pressed{
+    -fx-background-color: #616161;
+    -fx-font-size: 11px;
+    -fx-text-fill: #cdcdcd;
+}
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 15;
+    -fx-text-fill: #4e4e4e;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 0 40 0 20;
+}
+.text-field:hover {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.text-field:pressed {
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+}
+
+#SearchBtnMatchTab{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#searchBar{
+    -fx-background-color: #ffffff;
+    -fx-font-size: 15;
+    -fx-text-fill: #4e4e4e;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent #4e4e4e;
+    -fx-padding: 0 40 0 20;
+}
+
+#lblClubName {
+    -fx-font-size: 20px;
+}
+
+#lblVS{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+#lblPointsFC {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+#lblPointsTag {
+    -fx-font-size: 14px;
+}
