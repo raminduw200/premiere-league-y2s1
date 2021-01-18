@@ -12,7 +12,7 @@ Here an admin who controls the backend console app can do,</br>
          </br>
 A user can add a random match using Angular app and check the match history and league tables.
 
-![club_teams_screenshot](javafx/ss/club-teams.png?raw=true "Club Teams Page")
-![university_teams_screenshot](javafx/ss/uni-teams.png?raw=true "University Teams Page")
-![school_teams_screenshot](javafx/ss/school-teams.png?raw=true "School Teams Page")
-![history_screenshot](javafx/ss/history.png?raw=true "history Page")
+![club_teams_screenshot](ss/club-teams.png?raw=true "Club Teams Page")
+![university_teams_screenshot](ss/uni-teams.png?raw=true "University Teams Page")
+![school_teams_screenshot](ss/school-teams.png?raw=true "School Teams Page")
+![history_screenshot](ss/history.png?raw=true "history Page")
