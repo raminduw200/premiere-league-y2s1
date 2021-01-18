@@ -1,4 +1,4 @@
-## Premier League Football Manager - Second year first semester OOP course work
+# Angular application
 Backend developed with java and play framework and fontend designed with Angular.
 
 Here an admin who controls the backend console app can do,</br>
