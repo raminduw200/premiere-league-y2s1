@@ -26,8 +26,18 @@ public class CLI{
 	private static PremierLeagueManager leagueManager = new PremierLeagueManager();
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		Platform.setImplicitExit(false);
 
 		leagueManager.read();
+
+		//When the CLI runs, open the GUI in background.
+		new Thread() {
+			@Override
+			public void run(){
+				super.run();
+				GUI.main();
+			}
+		}.start();
 
 		System.out.print(displayMenu());
 		String input = sc.nextLine();
@@ -54,7 +64,8 @@ public class CLI{
 					System.out.println("Saved successfully");
 					break;
 				case "7":
-					leagueManager.launchGUI(args);
+					System.out.println("Opening GUI....");
+					Platform.runLater(GUI::stageShow);
 					break;
 				default:
 					System.out.println("Please select from the given options.");

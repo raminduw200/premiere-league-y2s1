@@ -13,6 +13,12 @@ import java.util.ArrayList;
 
 public class GUI extends Application{
 
+    private static Stage stage;
+
+    public static void main(){
+        launch();
+    }
+
     @Override
     public void start(Stage primaryStage) throws FileNotFoundException {
         primaryStage = new Stage();
@@ -35,8 +41,13 @@ public class GUI extends Application{
         Scene stageScene = new Scene(tabPane, 1075, 750);
         stageScene.getStylesheets().add("Interface/style.css");
         primaryStage.setScene(stageScene);
-        primaryStage.show();
+        stage = primaryStage;
     }
+
+    public static void stageShow(){
+        stage.show();
+    }
+
 }
 
 
