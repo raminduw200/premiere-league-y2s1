@@ -1,5 +1,5 @@
 # premiere-league-y2s1
-Premier League Football Manager - Second year first semester OOP course work
+Premier League Football Manager
 
 ## Premier League Football Manager
 
