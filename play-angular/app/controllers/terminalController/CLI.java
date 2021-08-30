@@ -9,12 +9,6 @@ import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;
 
-/*
-Name 	: 	Ramindu Walgama
-UOW ID 	:	w1790183
-IIT ID 		: 	2019730
-*/
-
 public class CLI{
 	static Scanner sc = new Scanner(System.in);
 	private static final PremierLeagueManager leagueManager = new PremierLeagueManager();
